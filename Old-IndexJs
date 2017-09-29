@@ -39,12 +39,6 @@ app.post('/login', function (req, res) {
     }    
 });
 
-app.post('/login', function(req, res){
-    res.sendFile(path +'login.html', function(err){
-
-    });
-});
-
 app.listen(3000);
 
 
