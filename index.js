@@ -9,7 +9,7 @@ app.use(express.static('wwwroot'));
 
 
 app.get('/', function(req, res){
-    res.send('<h1>Hello from root</h1>');
+    res.sendFile(path + 'index.html');
 });
 
 app.get('/testdigselv', function(req, res){
