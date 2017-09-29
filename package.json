@@ -2,14 +2,19 @@
   "name": "22-sep",
   "version": "1.0.0",
   "description": "My first express website",
-  "main": "index.js",
+  "main": "node index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.1",
     "express": "^4.15.4"
+  },
+  "engines": {
+    "node": "8.4.0"
   }
 }
