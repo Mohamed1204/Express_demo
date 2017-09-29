@@ -9,7 +9,7 @@ app.use(express.static('wwwroot'));
 
 
 app.get('/', function(req, res){
-    res.sendFile(path + 'index.html');
+    res.sendFile(path + 'login.html');
 });
 
 
@@ -37,11 +37,44 @@ app.post('/login', function (req, res) {
     }    
 });
 
-app.post('/login', function(req, res){
-    res.sendFile(path +'login.html', function(err){
+
+app.get('/link', function(req, res){
+    res.sendFile(path+ 'link.html', function(err){
 
     });
-});
+})
+
+app.post('/link', function(req, res){
+    res.sendFile(path+ 'index.html', function(err){
+        
+            });
+})
+
+app.post('/morePages', function(req, res){
+     res.sendFile(path+'verysecret.html', function(err){
+
+     });
+})
+
+app.post('/subscribe', function(req, res){
+    res.sendFile(path+'subscribe.html', function(err){
+
+    });
+
+    app.post('/tilForside', function(req, res){
+        res.sendFile(path+'index.html', function(err){
+   
+        });
+   })
+
+   app.post('/tilForside1', function(req, res){
+    res.sendFile(path+'index.html', function(err){
+
+    });
+})
+})
+
+
 
 app.listen(process.env.PORT || 3000);
 
