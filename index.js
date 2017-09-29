@@ -67,11 +67,6 @@ app.post('/subscribe', function(req, res){
         });
    })
 
-   app.post('/tilForside1', function(req, res){
-    res.sendFile(path+'index.html', function(err){
-
-    });
-})
 })
 
 
