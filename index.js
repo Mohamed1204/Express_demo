@@ -12,9 +12,7 @@ app.get('/', function(req, res){
     res.sendFile(path + 'index.html');
 });
 
-app.get('/testdigselv', function(req, res){
-    res.send('du vandt');
-});
+
 
 app.get('/login', function(req, res){
     res.sendFile(path +'login.html', function(err){
@@ -45,7 +43,7 @@ app.post('/login', function(req, res){
     });
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 
 
